@@ -1,39 +1,33 @@
-# Advanced AI for Cybersecurity: Intrusion Detection with UNSW-NB15
+# Advanced AI for Cybersecurity
 
-## Overview
+Intrusion Detection System using Machine Learning on UNSW-NB15 Dataset.
 
-This project develops a machine learning-based Intrusion Detection System (IDS) using the UNSW-NB15 dataset.
+## Project Overview
 
-The objective is to classify network traffic into multiple attack categories and distinguish malicious activities from normal behavior.
+This project compares multiple machine learning algorithms for network intrusion detection.
 
-## Dataset
+Dataset:
+- UNSW-NB15
 
-UNSW-NB15 Dataset
-
-Features:
-- Network traffic statistics
-- Protocol information
-- Service information
-- State information
-
-Target:
-- attack_cat
-
-## Models Compared
-
+Models:
 - Decision Tree
 - Random Forest
 - Extra Trees
+- KNN
 - Gradient Boosting
-- K-Nearest Neighbors
 
-## Best Model
+## Results
 
-Random Forest
+| Model | Accuracy |
+|---------|---------|
+| Random Forest | 82.28% |
+| Gradient Boosting | 81.24% |
+| Extra Trees | 81.22% |
+| Decision Tree | 79.73% |
+| KNN | 65.04% |
 
-Accuracy: 82.28%
-
-Weighted F1 Score: 80.14%
+Best Model:
+- Random Forest
 
 ## Feature Engineering
 
@@ -41,10 +35,8 @@ Additional features:
 
 - bytes_ratio
 - packet_ratio
-- load_ratio
-- pkt_size_ratio
 
-## Results
+## Visualizations
 
 ### Model Comparison
 
